@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan-light: hsl(182, 55%, 62%);
+  --cyan: hsl(179, 62%, 43%);
+  --yellow: hsl(71, 73%, 54%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  min-height: 100vh;
+}
+
+.card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  margin: auto;
+  width: 40%;
+}
+
+.card-top {
+  padding: 30px;
+}
+
+.card-top h1 {
+  color: var(--cyan);
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.card-top h3 {
+  color: var(--yellow);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.card-top p {
+  color: rgb(200, 197, 197);
+  width: 100%;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.info__subscription {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+  background: var(--cyan);
+  padding: none;
+}
+
+.info__subscription-title {
+  font-size: 18px;
+}
+
+.info__subscription-price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+  margin: 10px 0px;
+}
+
+.info__price-subscription_title {
+  font-size: 28px;
+}
+.info__price-subscription_para {
+  font-size: 14px;
+  color: rgb(239, 239, 239);
+  font-weight: 400;
+}
+
+.info__subscription-para {
+  font-size: 14px;
+}
+
+.info__subscription-btn {
+  margin-top: 40px;
+  background: var(--yellow);
+  outline: none;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.whyUs {
+  background: var(--cyan-light);
+  padding: 45px;
+  color: white;
+}
+
+.whyUs__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.whyUs__para {
+  font-size: 14px;
+  width: 80%;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgb(239, 239, 239);
+}
+
+footer {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 950px) {
+
+.info {
+    grid-template-columns: 1fr;
+  }
+}
